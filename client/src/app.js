@@ -6,7 +6,9 @@ import './app.scss'
 const App = {
   mounted () {
     if (process.env.TARO_ENV === 'weapp') {
-      Taro.cloud.init()
+      Taro.cloud.init({
+        env: 'chendian-taro-6gqb6vxzcb76cb82' 
+      })
     }
   },
   onShow (options) {

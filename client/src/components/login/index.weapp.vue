@@ -1,6 +1,6 @@
 <template>
   <view className="index">
-    <button @tap="getLogin">获取登录云函数1</button>
+    <button @tap="getLogin">获取登录云函数12</button>
     <text>context：{{ context }}</text>
   </view>
 </template>

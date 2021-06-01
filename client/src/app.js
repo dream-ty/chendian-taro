@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Taro from '@tarojs/taro'
-
+import 'taro-ui-vue/dist/style/index.scss'
 import './app.scss'
 
 const App = {

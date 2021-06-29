@@ -15,12 +15,19 @@
       </swiper-item>
     </swiper>
     <!-- <Login /> -->
+    <view>
+      <AtButton type='primary' :onClick="handleClick">按钮文案</AtButton>
+    </view>
+    <view>111111</view>
+    
   </view>
 </template>
 
 <script>
 import './index.scss'
 import Login from '../../components/login/index.weapp'
+import { AtButton } from 'taro-ui-vue'
+
 
 export default {
   name: 'Index',
@@ -40,7 +47,15 @@ export default {
     }
   },
   components: {
-    Login
+    Login, AtButton
+  },
+  methods: {
+    handleClick(){
+      console.log(111111);
+    }
+  },
+  onShow() {
+    console.log(222222);
   }
 }
 </script>
